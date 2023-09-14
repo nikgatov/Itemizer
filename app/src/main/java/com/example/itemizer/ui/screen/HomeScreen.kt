@@ -87,27 +87,6 @@ fun ErrorScreen(retryAction: () -> Unit, modifier: Modifier = Modifier) {
     }
 }
 
-//@OptIn(ExperimentalFoundationApi::class)
-//@Composable
-//private fun ItemizerListScreen(myItems: List<Section>, modifier: Modifier = Modifier) {
-//    LazyColumn(
-//        modifier = modifier,
-//        verticalArrangement = Arrangement.spacedBy(24.dp),
-//        contentPadding = PaddingValues(dimensionResource(R.dimen.padding_medium))
-//
-//    ) {
-//        myItems.forEach { (key, value) ->
-//            stickyHeader {
-//
-//            }
-//
-//            items(value) { item ->
-//
-//            }
-//        }
-//    }
-//}
-
 @Composable
 fun ExpandableList(sections: List<Section>) {
     val isExpandedMap = remember {
